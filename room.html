@@ -16,8 +16,9 @@
         <img id="paredes1" src="paredes1.jpeg">
         <img id="mesa1" src="mesa1.jpeg">
         <img id="imagen360" src="imagen360.jpeg">
+        <a-asset-item id="bola" src="Bolaenjaulada.glb"></a-asset-item>
       </a-assets>
-      <a-assets-item id="bola" src="Bola enjaulada.glb"></a-assets-item>
+    
       <!-- Piso (2x2 metros) -->
       <a-plane position="0 0 0" rotation="-90 0 0" width="2" height="2" color="#d9d9d9"></a-plane>
 
@@ -38,7 +39,7 @@
       src="#mesa1">
       </a-box>
       <a-sky src="#imagen360"></a-sky>
-      <a-entity glb-model="#bola" position "0 0 -3"></a-entity>
+      <a-entity gltf-model="#bola" position "0 0 -3"></a-entity>
     </a-scene>
   </body>
 </html>
