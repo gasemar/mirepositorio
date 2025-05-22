@@ -10,7 +10,7 @@
         <img id="imagen360" src="imagen360.jpeg">
         <a-asset-item id="bola" src="Bolaenjaulada.glb"></a-asset-item>
       </a-assets>
-      
+
       <!-- Cámara -->
       <a-entity position="0 1.6 6">
         <a-camera></a-camera>
@@ -29,14 +29,14 @@
       <a-box position="0 0.1 2" width="0.1" height="0.2" depth="4" color="#00796b"></a-box>
 
       <!-- Robots con movimiento -->
-      <a-sphere position="-2 0.6 1" radius="0.2" color="#ff5722"
-                animation="property: position; to: 2 0.6 1; dur: 4000; dir: alternate; loop: true"></a-sphere>
+      <a-entity gltf-model="#bola" position="-2 0.6 1" radius="0.2" scale="100 100 100"
+      animation="property: position; to: 2 0.6 1; dur: 4000; dir: alternate; loop: true"></a-entity>
 
       <a-sphere position="2 0.6 0" radius="0.2" color="#4caf50"
-                animation="property: position; to: -2 0.6 0; dur: 6000; dir: alternate; loop: true"></a-sphere>
+      animation="property: position; to: -2 0.6 0; dur: 6000; dir: alternate; loop: true"></a-sphere>
 
       <a-sphere position="0 0.6 -1" radius="0.2" color="#2196f3"
-                animation="property: position; to: 0 0.6 2.5; dur: 5000; dir: alternate; loop: true"></a-sphere>
+      animation="property: position; to: 0 0.6 2.5; dur: 5000; dir: alternate; loop: true"></a-sphere>
 
       <!-- Luces -->
       <a-light type="ambient" color="#999"></a-light>
