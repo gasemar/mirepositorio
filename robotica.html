@@ -5,7 +5,7 @@
   <body>
     <a-scene xr-mode-ui="XRMode: xr">
       <a-assets>
-        <img id="paredes1" src="paredes1.jpeg">
+        <img id="paredes" src="paredes1.jpeg">
         <img id="mesa" src="mesa1.jpeg">
         <img id="imagen360" src="imagen360.jpeg">
         <a-asset-item id="bola" src="Bolaenjaulada.glb"></a-asset-item>
@@ -25,7 +25,7 @@
       <a-box position="1.8 0.25 -2.5" width="0.1" height="0.5" depth="0.1" src="#mesa"></a-box>
 
       <!-- Zona de pruebas -->
-      <a-plane position="0 0.01 2" rotation="-90 0 0" width="6" height="4" color="#b2dfdb"></a-plane>
+      <a-plane position="0 0.01 2" rotation="-90 0 0" width="6" height="4" src="#paredes"></a-plane>
       <a-box position="0 0.1 2" width="0.1" height="0.2" depth="4" color="#00796b"></a-box>
 
       <!-- Robots con movimiento -->
